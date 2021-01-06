@@ -1,0 +1,22 @@
+<form ngForm>
+<table>
+  <tr>
+    <td>X:</td>
+    <td>
+      <input type='number' [(ngModel)]="data.x" name="x"/>
+    </td>
+  </tr>
+  <tr>
+    <td>X:</td>
+    <td>
+      <input type='number' [(ngModel)]="data.y" name="y"/>
+    </td>
+  </tr>
+  <tr>
+    <td>X + Y</td>
+    <td>
+       {{ data.x + data.y}}
+    </td>
+  </tr>
+</table>
+</form>

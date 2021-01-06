@@ -1,0 +1,32 @@
+<h2> Cats</h2>
+<table border="1">
+    <tr>
+        <td>
+          Name
+        </td>
+        <td>
+          Age
+        </td>
+        <td>
+          Gender
+        </td>
+        <td>
+          Breed
+        </td>
+    </tr>
+    <tr *ngFor='let cat of cats'>
+      <td>
+        {{cat.name}}
+      </td>
+      <td>
+        {{cat.age}}
+      </td>
+      <td>
+        {{cat.getGender()}}
+      </td>
+      <td>
+        {{cat.getBreed()}}
+      </td>
+  </tr>
+  
+  </table>

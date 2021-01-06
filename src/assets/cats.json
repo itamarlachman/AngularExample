@@ -1,0 +1,14 @@
+[
+  {
+    "name": "amos",
+    "gender": 1,
+    "age": 10,
+    "breed": 1    
+  },
+  {
+    "name": "lilith",
+    "gender": 2,
+    "age": 10,
+    "breed": 2   
+  }
+]
