@@ -10,5 +10,11 @@
     "gender": 2,
     "age": 10,
     "breed": 2   
+  },
+  {
+    "name": "brand",
+    "gender": 1,
+    "age": 4,
+    "breed": 1   
   }
 ]

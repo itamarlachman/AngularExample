@@ -12,6 +12,9 @@ import { FormsModule } from '@angular/forms';
 import { ButtonComponent } from './ui/button/button.component';
 import { CatsTableComponent } from './ui/cats-table/cats-table.component';
 import { BooksTableComponent } from './ui/books-table/books-table.component';
+import { AboutComponent } from './pages/about/about.component';
+import { ContactComponent } from './pages/contact/contact.component';
+import { MainComponent } from './pages/main/main.component';
 
 @NgModule({
   declarations: [
@@ -23,6 +26,9 @@ import { BooksTableComponent } from './ui/books-table/books-table.component';
     ButtonComponent,
     CatsTableComponent,
     BooksTableComponent,
+    AboutComponent,
+    ContactComponent,
+    MainComponent,
   ],
   imports: [
     BrowserModule,

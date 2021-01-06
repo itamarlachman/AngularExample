@@ -1,0 +1,42 @@
+
+<h1>START OF PAGE</h1>
+<div>
+  <hr />
+  <select>
+    <option *ngFor="let country of countries" value="country.code">
+      {{ country.name }}
+    </option>
+  </select>
+  <hr />
+</div>
+<div>
+  <app-button
+    *ngFor="let button of buttons"
+    (clickEvent)="addRemove($event)"
+    [buttonClass]="button.style"
+    [text]="button.text"
+  ></app-button>
+</div>
+
+
+<div class="flex-container">
+  <div class="card" *ngFor="let item of items">{{ item }}</div>
+</div>
+
+
+<hr />
+  <app-books-table></app-books-table>
+<hr />
+
+<hr />
+  <app-cats-table></app-cats-table>
+<hr />
+
+
+
+<!-- <app-calc [x]='20' [y]='45'></app-calc> -->
+<!-- 
+  <app-user-card *ngFor="let item of persons" [person]='item' [total]='3' [class]='"cinereousTable"'>
+  </app-user-card> 
+-->
+<h1>END OF PAGE</h1>

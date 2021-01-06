@@ -9,6 +9,9 @@
         <td>
           Name
         </td>
+        <td>
+          Url
+        </td>
     </tr>
     <tr *ngFor='let book of books'>
       <td>
@@ -17,6 +20,9 @@
       <td>
         {{book.name}}
       </td>
+      <td>
+        <a href='{{book.url}}' target="_blank"> Go To Book</a>
+       </td>
   </tr>
   
   </table>
