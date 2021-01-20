@@ -1,1 +1,19 @@
-<p>about works!</p>
+<form ngForm>
+  <table>
+    <tr>
+      <td>Cat Name</td>
+      <td><input type="text" [(ngModel)]="cat.name" name="name" /></td>
+    </tr>
+    <tr>
+        <td>Cat Age</td>
+        <td><input type="number" [(ngModel)]="cat.age" name="age" /></td>
+      </tr>
+      <tr>
+          <td colspan="2">
+            <input type="button" class="btn btn-primary" value="Register" (click)="register()"/>
+          </td>
+      </tr>
+    </table>
+
+  
+</form>

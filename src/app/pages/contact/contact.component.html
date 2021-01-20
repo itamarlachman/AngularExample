@@ -1,1 +1,29 @@
 <p>contact works!</p>
+<input type="button" class="btn btn-primary" value="Get Customers" (click)="getCustomers()"/>
+<input type="button" class="btn btn-danger" value="Add Customer" (click)="addCustomer()"/>
+<h2> Cats</h2>
+<table border="1">
+    <tr>
+        <td>
+          Name
+        </td>
+        <td>
+          Email
+        </td>
+        <td>
+          Phone
+        </td>
+    </tr>
+    <tr *ngFor='let customer of customers'>
+      <td>
+        {{customer.name}}
+      </td>
+      <td>
+        {{customer.email}}
+      </td>
+      <td>
+        {{customer.tel}}
+      </td>
+  </tr>
+  
+  </table>

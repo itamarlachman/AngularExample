@@ -1,4 +1,4 @@
-import { HttpClient } from '@angular/common/http';
+import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { Book } from '../models/book';
 import { Breed, Cat, Gender } from '../models/cat';
@@ -41,4 +41,23 @@ export class DataService {
   getBooks(): any[] {
     return this.books;
   }
+
+  getContacts():any{
+    let headers= new HttpHeaders();
+    headers.append('Accept', 'application/json');
+    return this.http.get('http://localhost:3000/customers');
+  }
+
+  addContact():any{
+    let headers= new HttpHeaders();
+    headers.append('Accept', 'application/json');
+    return this.http.post('http://localhost:3000/addCustomer',null, { headers });
+  }
+
+  getTime(cat: Cat): any {
+    let headers= new HttpHeaders();
+    headers.append('Accept', 'application/json');
+    return this.http.post('http://localhost:3000/test', { cat: cat } , { headers });
+  }
+  
 }
